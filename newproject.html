@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ΦΑΞ</title>
+    <style>
+
+        $db = mysql_select_db(e-shop)
+
+        /*
+        Ξεκινάει το πρώτο μέρος της είσαγωγής!!
+         */
+        div {
+            border: 1px solid gray;
+            padding: 8px;
+
+
+
+        }
+
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            color: #4CAF50;
+
+        }
+
+        p {
+            text-indent: 50px;
+            text-align: justify;
+            letter-spacing: 3px;
+
+        }
+
+
+
+        /*
+        Τελείωνει η εισαγωγή...πράσινα γράμματα και λευκό φόντο!
+        Αρχη μπάρασ
+         */
+
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #4CAF50;
+        }
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+
+        }
+        li a:hover:not(.active) {
+            background-color: #4CAF50;
+        }
+        .active {
+            background-color: #333333;
+        }
+
+        /*
+        Τελοσ πρασινης μπαρασ
+         */
+        .columns {
+            float: left;
+            width: 22%;
+            padding: 10px;
+        }
+
+
+        @media screen and (max-width:200px) {
+            .column {
+                width: 100%;
+            }
+        }
+
+
+        /*
+        Teleivnoyn oi stiles
+         */
+
+        .leftcolumn {
+            float: left;
+            width: 65%;
+        }
+
+        /* Right column */
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            background-color: #f1f1f1;
+            padding-left: 20px;
+        }
+
+        /* Fake image */
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* Add a card effect for articles */
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media screen and (max-width: 800px) {
+            .leftcolumn, .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        /* stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+            .leftcolumn, .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+
+        a:link, a:visited {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        a:hover, a:active {
+            background-color: #4CAF50;
+        }
+    </style>
+
+
+</head>
+<body>
+
+<div class="header">
+    <h1>ΦΑΞ:ΤΟ ΑΓΑΠΗΜΕΝΟ ΜΑΣ ΣΥΓΚΡΟΤΗΜΑ</h1>
+    <P> Οι ΦΑΞ επέστρεψαν.Ύστερα από τόσα χρόνια μακρυά σας,ήρθαμε να σας θυμήσουμε το πόσο πολύ αγαπάμε την μουσική,και πόσο τελικά μας αγαπάτε και εσείς.
+        Στην καινούργια ιστοσελίδα μας θα βρείτε όλα όσα σας ενδιαφέρουν να μάθετε.Τις ημερομήνιες και τα μέρη που θα παίζουμε μουσική,κάποιες πληροφορίες για εμάς καθώς και
+        τα καινούργια μας προιόντα,που δημιουργήθηκαν με βίντατζ αέρα έτσι ώστε να μάθουν οι καινούργιοι και να θυμηθούν οι παλιοί!</P>
+
+</div>
+
+<ul>
+    <li><p><a href="#C4">Αρχική</a></p> </li>
+    <li><p><a href="#C2">Επικοινωνία</a></p> </li>
+    <li><p><a href="#C1">Πρόγραμμα Συναυλιών</a></p></li>
+    <li onclick="newWindow()"><p><a href="#e-shop">e-shop</a></p></li>
+
+</ul>
+<script>
+    function newWindow() {
+        window.open("file:///C:/Users/froso/WebstormProjects/project1/001/index.html#e-shop")
+    }
+</script>
+<div class="row">
+    <div class="columns">
+        <img src="1.jpg"  width="300" height="300">
+        <h2>Βασίλης Παπακωνσταντίνου</h2>
+        <p>Γεννήθηκε στις 21 Ιουνίου 1950 στο χωριό Βάστας Αρκαδίας κοντά στη Μεγαλόπολη. Τα παιδικά του χρόνια τα πέρασε εκεί (έως τα 7 του) και μερικές εμπειρίες του απ΄ αυτά τις έκανε τραγούδια, όπως τη "Σφεντόνα". Στα 12 του χρόνια πήρε την πρώτη του κιθάρα. Αργότερα συμμετείχε σε διάφορα συγκροτήματα της εποχής όπου έκανε και τα πρώτα του μουσικά βήματα. Το πρώτο του συγκρότημα, με το οποίο τραγουδούσε σε Ιταλικό στίχο σε διάφορα κλαμπ, το ονόμασε CROSSWORDS.</p>
+    </div>
+
+    <div class="columns">
+        <img src="2.jpg"  width="300" height="300">
+        <h2>Άλκηστις Πρωτοψάλτη</h2>
+        <p>Γεννήθηκε στις 18 Οκτωβρίου του 1954 στην Αλεξάνδρεια της Αιγύπτου από Έλληνες ομογενείς. Στην εφηβεία της θα ασχοληθεί με τον αθλητισμό και περισσότερο συγκεκριμένα με το στίβο.Ενώ φαινότανε ότι θα ακολουθήσει μια καριέρα στον αθλητισμό, μετά από προτροπές φίλων κάνει μια ακρόαση με το Δήμο Μούτση, ο οποίος αναγνωρίζει το ταλέντο της στο τραγούδι και σύντομα κυκλοφορεί δίσκος με την πρώτη της δισκογραφική εμφάνιση, το 1975.</p>
+    </div>
+
+    <div class="columns">
+        <img src="3.jpg"  width="300" height="300">
+        <h2>Στέλιος Ρόκκος</h2>
+        <p>Γεννήθηκε το 1965 στην Καλλιόπη της Λήμνου. Ξεκίνησε να τραγουδά και να παίζει κιθάρα επαγγελματικά στη Λήμνο το 1984 και από το 1988 εκτός Λήμνου. Από τότε έχει κυκλοφορήσει πάνω από 12 άλμπουμ, τα περισσότερα από τα οποία γνώρισαν εμπορική επιτυχία.Το μεγαλύτερο μέρος των τραγουδιών που έχει ερμηνεύσει είναι σε δικούς του στίχους και μουσική.Στο παρελθόν συνεργάστηκε με πολλά ονόματα του ελληνικού τραγουδιού.όπως ο Τόλης Βοσκόπουλος, ο Γιάννης Πάριος, ο Πασχάλης Τερζής,</p>
+    </div>
+
+    <div class="columns">
+        <img src="4.jpg"  width="300" height="300">
+        <h2>Ελεωνόρα Ζουγανέλη</h2>
+        <p>Η Ζουγανέλη γεννήθηκε το 1983 στην Αθήνα και είναι κόρη του Γιάννη Ζουγανέλη και της Ισιδώρας Σιδέρη. Από πολύ μικρή ηλικία συμμετείχε ως ηθοποιός σε παιδικές θεατρικές παραστάσεις, αλλά και ως τραγουδίστρια σε παιδικά τραγούδια.Το 2004 έκανε πρώτο της επαγγελματικό βήμα στο χώρο του τραγουδιού με τη συμμετοχή της στη Δεύτερη Ακρόαση Νέων Ερμηνευτών της Μικρής Άρκτου του Παρασκευά Καρασούλου, όπου και διακρίθηκε.Το 2008 κυκλοφόρησε ο πρώτης της παλτινένιος δίσκος.</p>
+    </div>
+
+
+
+
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2 id="C1">Περιγραφή Συναυλιών</h2>
+                <h3>1.ΚΑΒΑΛΑ</h3>
+                <p>Η πρώτη μας Συναυλία θα πραγματοποιηθεί στην Καβάλα την Κυριακή 24 Απριλίου του 2019.
+                    Θα μας φιλοξενήσουν στο στάδιο Ανθή Καραγιάννη και η τιμή των εισητηρίων είναι 10 ευρώ για τους ενήλικες.Θα υπάρξουν ειδικές προσφορές
+                    για φοιτητές,πολύτεκνους και ανέργους.
+                </p>
+                <a href="https://www.visitkavala.gr/" target="_blank"> Επισκεφτείτε την επίσημη ιστοσελίδα της Καβάλας</a>
+
+                <h3>2.ΣΕΡΡΕΣ</h3>
+                <P>H δεύτερη συναυλία μας θα πραγματοποιηθεί στις Σέρρες στις 6 Μαίου του 2019.Το στάδιο Παπαφωτίου είναι αυτό που θα μας φιλοξενήσει,και σας περιμένουμε και εκεί με χαρά με
+                    τις ίδιες προσφορές και τιμές που αναφέρθηκαν παραπάνω.
+                </P>
+                <a href="https://www.serreslife.gr/" target="_blank"> Επισκεφτείτε την επίσημη ιστοσελίδα των Σερρών</a>
+
+                <h3>3.ΘΕΣΣΑΛΟΝΙΚΗ</h3>
+                <P>H τρίτη συναυλία μας θα πραγματοποιηθεί στην Θεσσαλονίκη στις 19 Μαίου του 2019.Στην πλατεία Αριστοτέλους θα εμφανιστούμε και εκεί,και σας περιμένουμε με χαρά με
+                    τις ίδιες προσφορές και τιμές που αναφέρθηκαν παραπάνω.
+                </P>
+                <a href="https://thessaloniki.gr/" target="_blank"> Επισκεφτείτε την επίσημη ιστοσελίδα της θεσσαλονίκης.</a>
+
+                <h3>4.ΑΘΗΝΑ</h3>
+                <P>H τέταρτη  συναυλία μας θα πραγματοποιηθεί στην πανέμορφη πρωτέυουσα μας την Αθήνα στις 28 Μαίου του 2019.Θα εμφανιστούμε και εκεί,και σας περιμένουμε  με χαρά με
+                    τις ίδιες προσφορές και τιμές που αναφέρθηκαν παραπάνω.
+                </P>
+                <a href="http://www.visitgreece.gr/el/main_cities/athens" target="_blank"> Επισκεφτείτε την επίσημη ιστοσελίδα της Αθήνας.</a>
+
+
+                <h3>5.ΜΥΚΟΝΟΣ</h3>
+                <P>H πέμπτη συναυλία μας θα πραγματοποιηθεί στην Μύκονο στις 20 Ιουλίου του 2019.Οι τιμές θα είναι λιγάκι αυξημένες και αλλαγμένες δίοτι το απαιτεί το νησί.Η είσοδος θα ειναι για όλους στα 20 ευρώ.
+
+                </P>
+                <a href="https://mykonos.gr/" target="_blank"> Επισκεφτείτε την επίσημη ιστοσελίδα της Μυκόνου.</a>
+
+
+                <h3>6.ΔΡΑΜΑ</h3>
+                <P>Και η έκτη και τελυταία συναυλία μας θα πραγματοποιηθεί στην Δράμα στις  13 Σεπτεμβρίου του 2019.Θα εμφανιστούμε και εκεί,και σας περιμένουμε  με χαρά με
+                    τις ίδιες προσφορές και τιμές που αναφέρθηκαν παραπάνω για τις πόλεις,Καβάλα,Σέρρες,θεσσαλονίκη.
+                </P>
+                <a href="http://www.visitgreece.gr/el/main_cities/drama"> Επισκεφτείτε την επίσημη ιστοσελίδα της Δράμας.</a>
+            </div>
+
+
+
+            <div class="card">
+
+                <div class="card">
+                    <h3 id="C2">Follow Us</h3>
+                    <p>Μπορείτε να μας βρείτε στο</p>
+                    <p> Facebook  FAX official</p>
+                    <a href="https://www.facebook.com/" target="_blank"> FAX official</a>
+                    <p>Instangram FAX_oficial</p>
+                    <a href="https://www.instagram.com/" target="_blank"> FAX_official</a>
+                    <p>Twitter  FAX SUG</p>
+                    <a href="'https://twitter.com/" target="_blank">  FAX SUG</a>
+                </div>
+
+
+                <p>Σας ευχαριστούμε για τα πολλά χρόνια υποστήριξη σας και σας ανταμείβουμε με πάρα πολλά δώρα και ταξίδια μέσο του instagram μας.
+                    Τα βήματα είναι απλά:</p>
+                <p>1.Κάντε μας Follow.</p>
+                <p>2.Κάντε Like στην φωτογραφία του διαγωνισμού.</p>
+                <p>3.Αφήστε Comment κάτω από την φωτογραφία μας ταγκάροντας τρεις φίλους σας.</p>
+                <P>4.Κερδίστε εισητήρια,δώρα,ταξίδια και πολλές άλλες εκπλήξεις.</P>
+            </div>
+        </div>
+
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>Πρόγραμμα Συναυλιών</h2>
+            </div>
+
+            <div class="card">
+
+                <p>
+                <h5> Καλοκαιρινή περιοδεία </h5>
+                <img src="kav.jpg"  width="300" height="230">
+                <div class="desc">Καβάλα 24/4/2019 </div>
+                <img src="ser.jpg"  width="300" height="230">
+                <div class="desc">Σέρρες 6/5/2019</div>
+                <img src="the.jpg"  width="300" height="230">
+                <div class="desc"> Θεσσαλονίκη 19/5/2019</div>
+                <img src="ath.jpg"  width="300" height="230">
+                <div class="desc">Aθήνα 28/5/2019</div>
+                <img src="muk.jpg"  width="300" height="230">
+                <div class="desc">Μύκονος 20/7/2019</div>
+                <img src="dra.jpg"  width="300" height="230">
+                <div class="desc"> Δράμα 13/9/2019</div></p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>
